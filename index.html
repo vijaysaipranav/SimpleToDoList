@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do list</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    </head>
+    <body class="container">
+        <header class="logo">
+
+            <h2><img src="images/tasks.png" alt="logo"> Todo list</h2>
+        </header>
+        <div class="main">
+            <!-- A text box at the top to add a todo item to the list. -->
+            <form>
+                <div id="div1">
+                    <input type="text" placeholder="New Task...">
+                    <!-- Add button: when a user clicks on the button, add that todo item to the list. -->
+                    <button type="submit"><i class="fas fa-plus-square"></i></button>
+                </div>
+                <div id="div2">
+                    <a id="completeAll" class="pointerClass">Complete all
+                        tasks</a>
+                    <a id="clearCompleted" class="pointerClass">Clear
+                        completed</a>
+
+                </div>
+
+            </form>
+
+            <div class="todo-list">
+                <!-- all tasks will be visibile here once we add functionalty to the add button -->
+                <ul>
+
+
+
+                </ul>
+                <div id="bottomBar">
+
+                    <div>
+                        <a id="total"><span>0</span> tasks left</a>
+                    </div>
+                    <div>
+                        <a id="completed" class="pointerClass">Completed Tasks</a>
+                        <a id="uncompleted" class="pointerClass">Uncompleted
+                            Tasks<span></span></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <script type="text/javascript" src="index.js"></script>
+
+
+        </body>
+    </html>
